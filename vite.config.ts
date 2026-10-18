@@ -6,7 +6,10 @@ import { seoPlugin } from './build/seo-plugin.ts'
 
 export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
-  const rawSiteUrl = env.SITE_URL || (command === 'serve' ? 'http://localhost:5173' : '')
+  const rawSiteUrl =
+    process.env.SITE_URL ||
+    env.SITE_URL ||
+    (command === 'serve' ? 'http://localhost:5173' : '')
   const siteUrl = rawSiteUrl.replace(/\/+$/, '')
 
   if (command === 'build' && !/^https:\/\/[^/]+/.test(siteUrl)) {
