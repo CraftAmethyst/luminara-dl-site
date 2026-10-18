@@ -1,0 +1,38 @@
+name: Refresh release data
+
+on:
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-release-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch release snapshot
+        run: node scripts/fetch-releases.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Commit changed snapshot
+        run: |
+          if git diff --quiet -- src/data/releases.json; then
+            echo "No release changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/releases.json
+          git commit -m "chore(data): refresh GitHub release snapshot"
+          git push

@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-18T11:53:25.278Z",
+  "repo": "CraftAmethyst/Luminara",
+  "releases": [
+    {
+      "id": 416337864,
+      "tag": "Trials/1.0.16",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "1.0.16",
+      "name": "Trials/1.0.16",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/1.0.16",
+      "publishedAt": "2026-10-18T08:54:19Z",
+      "prerelease": false,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 652991373,
+          "name": "luminara-forge-1.20.1-1.0.16.jar",
+          "size": 21823598,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/1.0.16/luminara-forge-1.20.1-1.0.16.jar",
+          "loader": "forge",
+          "loaderSource": "filename",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "389ed7e2481cf37431b6299aa70a33c93f711651f000a1656945cc76731a6206",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 402117315,
+      "tag": "Trials/1.0.16-beta.1",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "1.0.16-beta.1",
+      "name": "Trials/1.0.16-beta.1",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/1.0.16-beta.1",
+      "publishedAt": "2026-10-02T20:01:19Z",
+      "prerelease": true,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 606383131,
+          "name": "luminara-forge-1.20.1-1.0.16-beta.1.jar",
+          "size": 21780232,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/1.0.16-beta.1/luminara-forge-1.20.1-1.0.16-beta.1.jar",
+          "loader": "forge",
+          "loaderSource": "filename",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "bf12dd1da405332deba9f7db4087d790937045ce9797ed2426f2e3b06af5f7e8",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 377248212,
+      "tag": "FeudalKings/1.0.15-beta.1",
+      "tagPrefix": "FeudalKings",
+      "branch": "feudalkings",
+      "version": "1.0.15-beta.1",
+      "name": "FeudalKings/1.0.15-beta.1",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/FeudalKings/1.0.15-beta.1",
+      "publishedAt": "2026-08-26T15:46:16Z",
+      "prerelease": true,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 530989660,
+          "name": "luminara-neoforge-1.21.1-1.0.15-beta.1.jar",
+          "size": 27952218,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/FeudalKings/1.0.15-beta.1/luminara-neoforge-1.21.1-1.0.15-beta.1.jar",
+          "loader": "neoforge",
+          "loaderSource": "filename",
+          "minecraft": "1.21.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "f019ab33c3c5e447be32e3ef4b012d86b487074ac7c5909c43b95f3e219554dd",
+            "source": "github-digest",
+            "file": null
+          }
+        },
+        {
+          "id": 530989698,
+          "name": "luminara-fabric-1.21.1-1.0.15-beta.1.jar",
+          "size": 29277903,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/FeudalKings/1.0.15-beta.1/luminara-fabric-1.21.1-1.0.15-beta.1.jar",
+          "loader": "fabric",
+          "loaderSource": "filename",
+          "minecraft": "1.21.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "df88d47e206a242aac2143f342afa44e902e61e05b91bcb85f37d486719e332c",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 367587647,
+      "tag": "FK/a1.0.15",
+      "tagPrefix": "FK",
+      "branch": "feudalkings",
+      "version": "1.0.15",
+      "name": "FK 1.0.15 Alpha",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/FK/a1.0.15",
+      "publishedAt": "2026-08-09T21:18:39Z",
+      "prerelease": true,
+      "legacy": true,
+      "assets": [
+        {
+          "id": 507911897,
+          "name": "luminara-neoforge-1.21.1-1.0.15-Alpha.jar",
+          "size": 8316070,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/FK/a1.0.15/luminara-neoforge-1.21.1-1.0.15-Alpha.jar",
+          "loader": "neoforge",
+          "loaderSource": "filename",
+          "minecraft": "1.21.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "04b6761c83ca7639cc9a203ad4e0f0c2de7536ac7ebd692a0abe35a1937f2a6a",
+            "source": "github-digest",
+            "file": null
+          }
+        },
+        {
+          "id": 507911915,
+          "name": "luminara-fabric-1.21.1-1.0.15-Alpha.jar",
+          "size": 7954116,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/FK/a1.0.15/luminara-fabric-1.21.1-1.0.15-Alpha.jar",
+          "loader": "fabric",
+          "loaderSource": "filename",
+          "minecraft": "1.21.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "782712726bf4f84e43f6cb2888a67d7b5b10ce89506725e9dd6fef58686fa98a",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 365478645,
+      "tag": "Trials/1.0.15-hotfix",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "1.0.15-hotfix",
+      "name": "1.0.15 Hotfix",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/1.0.15-hotfix",
+      "publishedAt": "2026-08-05T11:31:37Z",
+      "prerelease": false,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 502543440,
+          "name": "luminara-1.20.1-1.0.15-hotfix.jar",
+          "size": 6839271,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/1.0.15-hotfix/luminara-1.20.1-1.0.15-hotfix.jar",
+          "loader": "forge",
+          "loaderSource": "branch-default",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "cc7eb308f7590969b381d5f90fa0be7ad531763c0284830d872c546baa6ec711",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 364906666,
+      "tag": "Trials/1.0.15",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "1.0.15",
+      "name": "1.0.15",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/1.0.15",
+      "publishedAt": "2026-08-04T13:48:26Z",
+      "prerelease": false,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 501398230,
+          "name": "luminara-1.20.1-1.0.15.jar",
+          "size": 6835778,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/1.0.15/luminara-1.20.1-1.0.15.jar",
+          "loader": "forge",
+          "loaderSource": "branch-default",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "0fa81d37efd969c3f8f6019a0ed66b23f6a56a0d65a354867437d4c54341a714",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 288121285,
+      "tag": "Trials/1.0.15-alpha.1",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "1.0.15-alpha.1",
+      "name": "1.0.15 Trials Alpha 1",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/1.0.15-alpha.1",
+      "publishedAt": "2026-02-19T10:35:23Z",
+      "prerelease": true,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 358496019,
+          "name": "luminara-fabric-1.20.1-1.0.15-alpha.1.jar",
+          "size": 29190304,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/1.0.15-alpha.1/luminara-fabric-1.20.1-1.0.15-alpha.1.jar",
+          "loader": "fabric",
+          "loaderSource": "filename",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "unsupported",
+          "checksum": {
+            "sha256": "d6810022c1704feeca488dbe86bb738c199651119e96e1668e212c75370ee742",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 286332445,
+      "tag": "Trials/1.0.14",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "1.0.14",
+      "name": "1.0.14 Trials",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/1.0.14",
+      "publishedAt": "2026-02-14T05:47:08Z",
+      "prerelease": false,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 355741960,
+          "name": "luminara-1.20.1-1.0.14.jar",
+          "size": 6600183,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/1.0.14/luminara-1.20.1-1.0.14.jar",
+          "loader": "forge",
+          "loaderSource": "branch-default",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "0bac648f753dbd4d9d1546644612114a40f484d6b65a301a67307ab648dc80cb",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 281111446,
+      "tag": "Trials/1.0.13",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "1.0.13",
+      "name": "1.0.13 Trials",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/1.0.13",
+      "publishedAt": "2026-01-29T13:23:41Z",
+      "prerelease": false,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 347679409,
+          "name": "luminara-1.20.1-1.0.13.jar",
+          "size": 6574959,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/1.0.13/luminara-1.20.1-1.0.13.jar",
+          "loader": "forge",
+          "loaderSource": "branch-default",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "7036a514ca517b401cfc704a302e555cf9e149860fbae5db002f9be159a0156c",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 275706050,
+      "tag": "Trials/1.0.12",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "1.0.12",
+      "name": "1.0.12 Trials",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/1.0.12",
+      "publishedAt": "2026-01-10T11:15:40Z",
+      "prerelease": false,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 338726590,
+          "name": "luminara-1.20.1-1.0.12.jar",
+          "size": 6543914,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/1.0.12/luminara-1.20.1-1.0.12.jar",
+          "loader": "forge",
+          "loaderSource": "branch-default",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "68da60c1ac40f4c8cbf9a86146fa2583c8e97270cb2d54ed4c9f6c6306b3a0da",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 273692908,
+      "tag": "Trials/1.0.11",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "1.0.11",
+      "name": "1.0.11 Trials",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/1.0.11",
+      "publishedAt": "2026-01-01T11:05:59Z",
+      "prerelease": false,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 335162618,
+          "name": "luminara-1.20.1-1.0.11.jar",
+          "size": 6532743,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/1.0.11/luminara-1.20.1-1.0.11.jar",
+          "loader": "forge",
+          "loaderSource": "branch-default",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "ee0668e01c6ab480b64bc6b45178471d2b40e423115ebe2c6974067ec98e970c",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 262549991,
+      "tag": "Trials/1.0.10",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "1.0.10",
+      "name": "1.0.10 Trials",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/1.0.10",
+      "publishedAt": "2025-11-14T20:35:28Z",
+      "prerelease": false,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 316527249,
+          "name": "luminara-1.20.1-1.0.10.jar",
+          "size": 6527895,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/1.0.10/luminara-1.20.1-1.0.10.jar",
+          "loader": "forge",
+          "loaderSource": "branch-default",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "2e277d97083ddd47d9943618515ade6f46b809b9ad472287c4e477ef7245638b",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 255578783,
+      "tag": "1.0.9.1-Fix",
+      "tagPrefix": null,
+      "branch": "trials",
+      "version": "1.0.9.1-Fix",
+      "name": "1.0.9.1-Fix Trials",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/1.0.9.1-Fix",
+      "publishedAt": "2025-10-19T04:40:29Z",
+      "prerelease": false,
+      "legacy": true,
+      "assets": [
+        {
+          "id": 306044236,
+          "name": "luminara-1.20.1-1.0.9.1-fix.jar",
+          "size": 6511956,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/1.0.9.1-Fix/luminara-1.20.1-1.0.9.1-fix.jar",
+          "loader": "forge",
+          "loaderSource": "branch-default",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "6131d4cc74b27f138610ce195f647f914ff5f01acf7b7cbb65597ddb428fbb69",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 255534817,
+      "tag": "Trials/1.0.9",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "1.0.9",
+      "name": "1.0.9 Trials",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/1.0.9",
+      "publishedAt": "2025-10-18T14:06:44Z",
+      "prerelease": false,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 305842579,
+          "name": "luminara-1.20.1-1.0.9.jar",
+          "size": 6506847,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/1.0.9/luminara-1.20.1-1.0.9.jar",
+          "loader": "forge",
+          "loaderSource": "branch-default",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "83c4546108db871f5e1f99715e2f0f570c80ee75efc8f3123c2f79d74720cfac",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 252727918,
+      "tag": "Trials/1.0.8.1",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "1.0.8.1",
+      "name": "1.0.8.1 Trials",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/1.0.8.1",
+      "publishedAt": "2025-10-07T14:07:28Z",
+      "prerelease": false,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 301534125,
+          "name": "luminara-1.20.1-1.0.8.1.jar",
+          "size": 6554639,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/1.0.8.1/luminara-1.20.1-1.0.8.1.jar",
+          "loader": "forge",
+          "loaderSource": "branch-default",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "1f170d4e2c7b53d4911af883247b359362dfc91dff221371411bac5424df07e4",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 235854128,
+      "tag": "Trials/1.0.8",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "1.0.8",
+      "name": "1.0.8",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/1.0.8",
+      "publishedAt": "2025-07-29T06:53:33Z",
+      "prerelease": false,
+      "legacy": false,
+      "assets": [],
+      "otherAssets": [
+        "Luminara.zip"
+      ]
+    },
+    {
+      "id": 234142518,
+      "tag": "Trials/1.0.7",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "1.0.7",
+      "name": "1.0.7",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/1.0.7",
+      "publishedAt": "2025-07-22T07:25:30Z",
+      "prerelease": false,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 275172372,
+          "name": "luminara-forge-1.20.1-1.0.7.jar",
+          "size": 5745898,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/1.0.7/luminara-forge-1.20.1-1.0.7.jar",
+          "loader": "forge",
+          "loaderSource": "filename",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "a095682666b7f9b1d086cdf60e7ed660e1408b9eb80fd11dbf64ca55a9a7b83d",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    }
+  ]
+}

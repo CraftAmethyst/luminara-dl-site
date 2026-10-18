@@ -1,0 +1,65 @@
+import type { Messages } from './messages.zh'
+
+export const en: Messages = {
+  skipToContent: 'Skip to content',
+  navDocs: 'Docs',
+  navGithub: 'GitHub',
+  languageZh: '中文',
+  languageEn: 'EN',
+
+  pageTitle: 'Download Luminara',
+
+  stable: 'Stable',
+  experimental: 'Experimental',
+  prerelease: 'Prerelease',
+  latest: 'Latest',
+  branchGroup: 'Choose a release branch',
+  branchTrials: 'Trials · 1.20.1',
+  branchFeudalKings: 'FeudalKings · 1.21.1',
+  releaseNotes: 'Release notes',
+  details: 'Details',
+  checksum: 'SHA-256',
+  copyChecksum: 'Copy SHA-256',
+  copied: 'Copied',
+  copyFailed: 'Copy failed. Select the value manually.',
+  checksumUnavailable: 'No checksum provided for this file',
+  download: 'Download',
+  downloadForLoader: 'Download {loader} build',
+  proxyLabel: 'Mirror',
+  proxyDisclaimer:
+    'Mirrors are third-party services. Verify files against SHA-256.',
+
+  downloadDialogTitle: 'Choose download',
+  downloadGithub: 'GitHub direct',
+  downloadAccel: 'China mirror',
+  githubOptionHint: 'Download from github.com',
+  mirrorOptionHint: 'Download via {proxy}',
+  cancel: 'Cancel',
+  close: 'Close',
+
+  historyTitle: 'All versions',
+  releaseCount: '{n} releases',
+  columnVersion: 'Version',
+  columnStatus: 'Status',
+  columnDownload: 'Download',
+  noJar: 'No downloadable JAR for this release',
+  noJarBadge: 'No JAR',
+  onlyZip: 'ZIP only',
+  legacy: 'Legacy naming',
+  unsupportedHint:
+    'This file does not match the supported combination for this branch; historical troubleshooting only.',
+  noReleases: 'No releases to show for this branch',
+  viewOnGithub: 'View on GitHub',
+
+  footerDocs: 'Docs',
+  footerDiscord: 'Discord',
+  footerQq: 'QQ group',
+  footerCopyQq: 'Copy QQ group number',
+  footerData: 'Release data updated',
+  footerSource: 'Source & GPL-3.0',
+
+  emptyTitle: 'No releases to show right now',
+  emptyBody: 'Visit GitHub Releases for the latest publications.',
+  emptyAction: 'Open GitHub Releases',
+  copy: 'Copy',
+}
