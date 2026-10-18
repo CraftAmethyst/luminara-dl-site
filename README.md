@@ -99,26 +99,28 @@ npm run assets:generate
 
 ## 部署到 Cloudflare Pages
 
-推荐使用 Git 集成：
+Pages 项目 `luminara-dl-site` 已连接 GitHub 仓库
+`CraftAmethyst/luminara-dl-site` 的 `main` 分支，推送即触发构建。
 
-- 项目名：`luminara-dl`
+- 项目名：`luminara-dl-site`
 - 生产分支：`main`
 - Build command：`npm ci && npm run build`
 - Output directory：`dist`
 - 环境变量：
-  - `SITE_URL=https://<实际域名>`
+  - `SITE_URL=https://lum-dl.rimecraft.top`
   - `NODE_VERSION=22`
-
-也可以手动部署（需要先 `npx wrangler login`）：
-
-```bash
-npm run deploy:manual
-```
 
 ### 自定义域名
 
-在 Pages 项目中添加例如 `lum-dl.rimecraft.top`，在 Cloudflare DNS 创建对应记录，
-等 SSL 生效后把 `SITE_URL` 改为该域名并重新构建。不要在域名生效前硬编码。
+在 Pages 项目 `luminara-dl-site` 中添加 `lum-dl.rimecraft.top`，并在
+Cloudflare DNS 创建 CNAME：
+
+- 名称：`lum-dl`
+- 目标：`luminara-dl-site.pages.dev`
+- 代理：已代理（橙色云）
+
+等 SSL 生效后访问 `https://lum-dl.rimecraft.top`。构建环境中的 `SITE_URL`
+已经指向该域名，不需要再改。
 
 ## 自动刷新版本数据
 
