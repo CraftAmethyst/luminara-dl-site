@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import { assetAcceleration, proxyLabel } from '@/lib/downloads'
-import { selectedProxy } from '@/lib/proxy-store'
+import { PROXIES, tryBuildAcceleratedUrl } from '@/lib/downloads'
 import { closeDownloadDialog, dialogAsset } from '@/lib/download-dialog'
 import { formatBytes, loaderLabel } from '@/lib/format'
 import { useI18n } from '@/i18n'
@@ -14,10 +13,14 @@ const { t } = useI18n()
 
 const dialogEl = ref<HTMLDialogElement | null>(null)
 const asset = computed(() => dialogAsset.value)
-const accelerated = computed(() =>
-  asset.value ? assetAcceleration(asset.value, selectedProxy.value) : null,
-)
-const currentProxy = computed(() => proxyLabel(selectedProxy.value))
+const mirrors = computed(() => {
+  const current = asset.value
+  if (!current) return []
+  return PROXIES.flatMap((proxy) => {
+    const url = tryBuildAcceleratedUrl(current.downloadUrl, proxy.id)
+    return url ? [{ id: proxy.id, label: proxy.label, url }] : []
+  })
+})
 
 watch(
   dialogAsset,
@@ -109,31 +112,32 @@ function onDialogClick(event: MouseEvent) {
             </span>
           </a>
 
-          <a
-            v-if="accelerated"
-            class="flex items-center gap-3 rounded-[10px] border border-line-strong px-4 py-3 text-ink transition-colors hover:bg-subtle"
-            :href="accelerated"
-            rel="noopener noreferrer"
-            @click="close"
-          >
-            <BoltIcon class="h-5 w-5 shrink-0" />
-            <span class="min-w-0">
-              <span class="block text-sm font-semibold">
-                {{ t('downloadAccel') }}
-              </span>
-              <span class="block text-[11px] text-ink-muted">
-                {{ t('mirrorOptionHint', { proxy: currentProxy }) }}
-              </span>
-            </span>
-          </a>
-          <span
-            v-else
-            class="flex items-center gap-3 rounded-[10px] border border-line-strong px-4 py-3 text-ink-muted opacity-50"
-            aria-disabled="true"
-          >
-            <BoltIcon class="h-5 w-5 shrink-0" />
-            <span class="text-sm font-semibold">{{ t('downloadAccel') }}</span>
-          </span>
+          <div v-if="mirrors.length" class="pt-1">
+            <p
+              class="text-[11px] font-semibold uppercase tracking-[0.08em] text-ink-muted"
+            >
+              {{ t('downloadAccel') }}
+            </p>
+            <div class="mt-1.5 grid gap-2 sm:grid-cols-3">
+              <a
+                v-for="mirror in mirrors"
+                :key="mirror.id"
+                class="flex items-center justify-center gap-1.5 rounded-[8px] border border-line-strong px-2.5 py-2.5 text-ink transition-colors hover:bg-subtle"
+                :href="mirror.url"
+                rel="noopener noreferrer"
+                :aria-label="t('downloadVia', { proxy: mirror.label })"
+                @click="close"
+              >
+                <BoltIcon class="h-4 w-4 shrink-0" />
+                <span class="text-[12px] font-medium">
+                  {{ mirror.label }}
+                </span>
+              </a>
+            </div>
+            <p class="mt-2 text-[11px] leading-relaxed text-ink-muted">
+              {{ t('proxyDisclaimer') }}
+            </p>
+          </div>
         </div>
 
         <div class="flex justify-end border-t border-line px-5 py-3">

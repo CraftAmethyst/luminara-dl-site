@@ -25,15 +25,14 @@ export const en: Messages = {
   checksumUnavailable: 'No checksum provided for this file',
   download: 'Download',
   downloadForLoader: 'Download {loader} build',
-  proxyLabel: 'Mirror',
   proxyDisclaimer:
     'Mirrors are third-party services. Verify files against SHA-256.',
 
   downloadDialogTitle: 'Choose download',
   downloadGithub: 'GitHub direct',
-  downloadAccel: 'China mirror',
+  downloadAccel: 'China mirrors',
   githubOptionHint: 'Download from github.com',
-  mirrorOptionHint: 'Download via {proxy}',
+  downloadVia: 'Download via {proxy}',
   cancel: 'Cancel',
   close: 'Close',
 

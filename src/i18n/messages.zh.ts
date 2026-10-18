@@ -23,14 +23,13 @@ export const zh = {
   checksumUnavailable: '此文件未提供校验值',
   download: '下载',
   downloadForLoader: '下载 {loader} 版本',
-  proxyLabel: '加速线路',
   proxyDisclaimer: '加速线路为第三方服务，请以 SHA-256 校验文件完整性。',
 
   downloadDialogTitle: '选择下载方式',
   downloadGithub: 'GitHub 直连',
   downloadAccel: '国内加速',
   githubOptionHint: '从 github.com 官方下载',
-  mirrorOptionHint: '通过 {proxy} 下载',
+  downloadVia: '通过 {proxy} 加速下载',
   cancel: '取消',
   close: '关闭',
 

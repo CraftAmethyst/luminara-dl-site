@@ -4,11 +4,10 @@ Luminara 的独立下载页：中文默认 `/`，英文 `/en/`。所有版本与
 [`CraftAmethyst/Luminara`](https://github.com/CraftAmethyst/Luminara) 的 GitHub
 Releases，构建时生成快照并提交到仓库，浏览器运行时不请求 GitHub API。
 
-每个可下载文件提供两个操作：
+每个可下载文件有一个下载按钮；点击后在弹窗中选择：
 
-- **GitHub 下载**：release asset 直链。
-- **国内加速**：把完整直链拼到第三方 GitHub 加速前缀后，可在
-  `ghfast.top` / `gh-proxy.com` / `ghproxy.net` 之间切换。
+- **GitHub 直连**：release asset 直链。
+- **国内加速**：`ghfast.top` / `gh-proxy.com` / `ghproxy.net` 三个独立线路按钮。
 
 ## 技术栈
 
@@ -136,7 +135,7 @@ Cloudflare DNS 创建 CNAME：
 
 ## 加速线路
 
-定义在 `src/lib/downloads.ts`：
+定义在 `src/lib/downloads.ts`；下载弹窗会为当前文件生成三条独立加速链接：
 
 ```ts
 export const PROXIES = [
@@ -146,9 +145,8 @@ export const PROXIES = [
 ]
 ```
 
-选择保存在 `localStorage` 的 `luminara.download-proxy`，不可用时回退
-`ghfast`。加速线路均为第三方服务，可能失效或篡改文件；页面始终展示
-SHA-256 校验值，并保留 GitHub 直连作为主操作。
+加速线路均为第三方服务，可能失效或篡改文件；页面始终展示 SHA-256 校验值，
+并保留 GitHub 直连作为主操作。
 
 ## 目录说明
 

@@ -1,5 +1,3 @@
-import type { ReleaseAsset } from '@/types/releases'
-
 export const PROXIES = [
   { id: 'ghfast', label: 'ghfast.top', prefix: 'https://ghfast.top/' },
   { id: 'gh-proxy', label: 'gh-proxy.com', prefix: 'https://gh-proxy.com/' },
@@ -7,12 +5,6 @@ export const PROXIES = [
 ] as const
 
 export type ProxyId = (typeof PROXIES)[number]['id']
-
-const STORAGE_KEY = 'luminara.download-proxy'
-
-export function isProxyId(value: unknown): value is ProxyId {
-  return PROXIES.some((proxy) => proxy.id === value)
-}
 
 export function buildAcceleratedUrl(
   githubUrl: string,
@@ -44,34 +36,4 @@ export function tryBuildAcceleratedUrl(
   } catch {
     return null
   }
-}
-
-export function readStoredProxy(): ProxyId {
-  if (typeof localStorage === 'undefined') return 'ghfast'
-  try {
-    const stored = localStorage.getItem(STORAGE_KEY)
-    return isProxyId(stored) ? stored : 'ghfast'
-  } catch {
-    return 'ghfast'
-  }
-}
-
-export function writeStoredProxy(proxyId: ProxyId): void {
-  if (typeof localStorage === 'undefined') return
-  try {
-    localStorage.setItem(STORAGE_KEY, proxyId)
-  } catch {
-    // Storage can be unavailable in private windows; the in-memory value still works.
-  }
-}
-
-export function proxyLabel(proxyId: ProxyId): string {
-  return PROXIES.find((proxy) => proxy.id === proxyId)?.label ?? proxyId
-}
-
-export function assetAcceleration(
-  asset: ReleaseAsset,
-  proxyId: ProxyId,
-): string | null {
-  return tryBuildAcceleratedUrl(asset.downloadUrl, proxyId)
 }

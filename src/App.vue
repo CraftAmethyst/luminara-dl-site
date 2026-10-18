@@ -7,7 +7,6 @@ import { BRANCH_ORDER } from '@/content/branches'
 import SiteHeader from './components/SiteHeader.vue'
 import VersionHistory from './components/VersionHistory.vue'
 import BranchTabs from './components/BranchTabs.vue'
-import ProxySelect from './components/ProxySelect.vue'
 import SiteFooter from './components/SiteFooter.vue'
 import DownloadDialog from './components/DownloadDialog.vue'
 
@@ -63,7 +62,6 @@ function selectBranch(value: BranchId) {
               :model-value="branch"
               @update:model-value="selectBranch"
             />
-            <ProxySelect />
           </div>
         </div>
 
