@@ -53,7 +53,7 @@ function onDialogClick(event: MouseEvent) {
   <Teleport to="body">
     <dialog
       ref="dialogEl"
-      class="download-dialog m-auto max-h-[90vh] w-[min(92vw,440px)] overflow-y-auto rounded-[14px] border border-line bg-paper p-0 text-ink shadow-2xl"
+      class="download-dialog m-auto max-h-[90vh] w-[min(92vw,540px)] overflow-y-auto rounded-[14px] border border-line bg-paper p-0 text-ink shadow-2xl"
       aria-labelledby="download-dialog-title"
       @close="onClose"
       @click="onDialogClick"
@@ -69,20 +69,23 @@ function onDialogClick(event: MouseEvent) {
             >
               {{ t('downloadDialogTitle') }}
             </h2>
-            <div class="mt-1.5 flex items-center gap-2">
+            <div class="mt-1.5 flex min-w-0 items-center gap-2">
               <LoaderLogo :loader="asset.loader" class="h-5 w-5" />
-              <span class="text-[12px] font-semibold">
+              <span class="shrink-0 text-[12px] font-semibold">
                 {{ loaderLabel(asset.loader) }}
               </span>
-              <span class="text-[11px] text-ink-muted">
-                · {{ formatBytes(asset.size) }}
+              <span class="shrink-0 text-line-strong" aria-hidden="true">·</span>
+              <span
+                class="mono min-w-0 flex-1 truncate text-[11px] text-ink-muted"
+                :title="asset.name"
+              >
+                {{ asset.name }}
+              </span>
+              <span class="shrink-0 text-line-strong" aria-hidden="true">·</span>
+              <span class="shrink-0 text-[11px] text-ink-muted">
+                {{ formatBytes(asset.size) }}
               </span>
             </div>
-            <p
-              class="file-name mono mt-1 text-[11px] leading-relaxed text-ink-muted"
-            >
-              {{ asset.name }}
-            </p>
           </div>
           <button
             type="button"
