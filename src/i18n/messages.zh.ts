@@ -5,7 +5,7 @@ export const zh = {
   languageZh: '中文',
   languageEn: 'EN',
 
-  pageTitle: 'Luminara 下载',
+  pageTitle: '下载 Luminara',
 
   stable: '稳定版',
   experimental: '实验性',
