@@ -3,8 +3,8 @@
   "short_name": "Luminara",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#f9fdff",
+  "theme_color": "#f9fdff",
   "icons": [
     {
       "src": "/icon-512.png",

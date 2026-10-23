@@ -2,7 +2,7 @@
 @import "./fonts.css";
 
 @theme {
-  --color-paper: #ffffff;
+  --color-paper: #f9fdff;
   --color-subtle: #f7f9fc;
   --color-ink: #0d1a2c;
   --color-ink-muted: #5b6b80;
