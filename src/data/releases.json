@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T11:53:25.278Z",
+  "generatedAt": "2026-10-24T09:42:52.792Z",
   "repo": "CraftAmethyst/Luminara",
   "releases": [
     {
@@ -58,6 +58,53 @@
           "compatibility": "supported",
           "checksum": {
             "sha256": "bf12dd1da405332deba9f7db4087d790937045ce9797ed2426f2e3b06af5f7e8",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 422640994,
+      "tag": "FeudalKings/1.0.15",
+      "tagPrefix": "FeudalKings",
+      "branch": "feudalkings",
+      "version": "1.0.15",
+      "name": "FeudalKings/1.0.15",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/FeudalKings/1.0.15",
+      "publishedAt": "2026-10-24T09:39:56Z",
+      "prerelease": false,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 671864123,
+          "name": "luminara-neoforge-1.21.1-1.0.15.jar",
+          "size": 27971637,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/FeudalKings/1.0.15/luminara-neoforge-1.21.1-1.0.15.jar",
+          "loader": "neoforge",
+          "loaderSource": "filename",
+          "minecraft": "1.21.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "e1c8b9e88ed4309c8f1e837948c6164e90d7b54ba733c71ff515541aad8687ff",
+            "source": "github-digest",
+            "file": null
+          }
+        },
+        {
+          "id": 671864124,
+          "name": "luminara-fabric-1.21.1-1.0.15.jar",
+          "size": 29302101,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/FeudalKings/1.0.15/luminara-fabric-1.21.1-1.0.15.jar",
+          "loader": "fabric",
+          "loaderSource": "filename",
+          "minecraft": "1.21.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "e10ab3d86fc73cc71d73d46783b2100d86114d905234c2ad56abfdf94ea22b44",
             "source": "github-digest",
             "file": null
           }
