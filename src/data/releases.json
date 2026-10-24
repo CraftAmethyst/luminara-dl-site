@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T09:42:52.792Z",
+  "generatedAt": "2026-10-24T16:05:51.083Z",
   "repo": "CraftAmethyst/Luminara",
   "releases": [
     {
@@ -58,6 +58,53 @@
           "compatibility": "supported",
           "checksum": {
             "sha256": "bf12dd1da405332deba9f7db4087d790937045ce9797ed2426f2e3b06af5f7e8",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
+    {
+      "id": 422780235,
+      "tag": "FeudalKings/1.0.15-hotfix",
+      "tagPrefix": "FeudalKings",
+      "branch": "feudalkings",
+      "version": "1.0.15-hotfix",
+      "name": "FeudalKings/1.0.15-hotfix",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/FeudalKings/1.0.15-hotfix",
+      "publishedAt": "2026-10-24T14:29:53Z",
+      "prerelease": false,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 672475230,
+          "name": "luminara-neoforge-1.21.1-1.0.15-hotfix.jar",
+          "size": 27973362,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/FeudalKings/1.0.15-hotfix/luminara-neoforge-1.21.1-1.0.15-hotfix.jar",
+          "loader": "neoforge",
+          "loaderSource": "filename",
+          "minecraft": "1.21.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "18a969700f57270cd3cfcf448545329b6cdeffd819adf1487189d47ef319069f",
+            "source": "github-digest",
+            "file": null
+          }
+        },
+        {
+          "id": 672475227,
+          "name": "luminara-fabric-1.21.1-1.0.15-hotfix.jar",
+          "size": 29302531,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/FeudalKings/1.0.15-hotfix/luminara-fabric-1.21.1-1.0.15-hotfix.jar",
+          "loader": "fabric",
+          "loaderSource": "filename",
+          "minecraft": "1.21.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "84bafff71b84e68a8ee0eed20cc350a81b7b13c7f5b2f09508cd65c60f6c83ed",
             "source": "github-digest",
             "file": null
           }
