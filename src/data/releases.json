@@ -1,8 +1,55 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T16:05:51.083Z",
+  "generatedAt": "2026-10-28T05:57:11.844Z",
   "repo": "CraftAmethyst/Luminara",
   "releases": [
+    {
+      "id": 426053675,
+      "tag": "Trials/2.0.0-alpha.1",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "2.0.0-alpha.1",
+      "name": "Trials/2.0.0-alpha.1",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/2.0.0-alpha.1",
+      "publishedAt": "2026-10-27T22:27:20Z",
+      "prerelease": true,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 683069154,
+          "name": "luminara-forge-1.20.1-2.0.0-alpha.1.jar",
+          "size": 21514426,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/2.0.0-alpha.1/luminara-forge-1.20.1-2.0.0-alpha.1.jar",
+          "loader": "forge",
+          "loaderSource": "filename",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "884f4905afb664cef886e2cd1e94c97fa39783aab48097e199d28be6d5f715ad",
+            "source": "github-digest",
+            "file": null
+          }
+        },
+        {
+          "id": 683068934,
+          "name": "luminara-fabric-1.20.1-2.0.0-alpha.1.jar",
+          "size": 21020831,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/2.0.0-alpha.1/luminara-fabric-1.20.1-2.0.0-alpha.1.jar",
+          "loader": "fabric",
+          "loaderSource": "filename",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "unsupported",
+          "checksum": {
+            "sha256": "ed578d6f992ffc763e37c98900850f642aefe8ed2119bb9c3c91867ba450e54a",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
     {
       "id": 416337864,
       "tag": "Trials/1.0.16",
