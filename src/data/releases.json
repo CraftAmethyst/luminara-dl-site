@@ -1,8 +1,55 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T05:57:11.844Z",
+  "generatedAt": "2026-10-29T11:45:20.800Z",
   "repo": "CraftAmethyst/Luminara",
   "releases": [
+    {
+      "id": 427794121,
+      "tag": "Trials/2.0.0-alpha.2",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "2.0.0-alpha.2",
+      "name": "Trials/2.0.0-alpha.2",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/2.0.0-alpha.2",
+      "publishedAt": "2026-10-29T11:43:50Z",
+      "prerelease": true,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 688378047,
+          "name": "luminara-forge-1.20.1-2.0.0-alpha.2.jar",
+          "size": 25514497,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/2.0.0-alpha.2/luminara-forge-1.20.1-2.0.0-alpha.2.jar",
+          "loader": "forge",
+          "loaderSource": "filename",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "cd2b7b8b935c379be595c5f397a394bcb29d90e8869f8d4cad6688a3b4c46a1a",
+            "source": "github-digest",
+            "file": null
+          }
+        },
+        {
+          "id": 688377805,
+          "name": "luminara-fabric-1.20.1-2.0.0-alpha.2.jar",
+          "size": 25924846,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/2.0.0-alpha.2/luminara-fabric-1.20.1-2.0.0-alpha.2.jar",
+          "loader": "fabric",
+          "loaderSource": "filename",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "unsupported",
+          "checksum": {
+            "sha256": "f0a7133ce8fe5a19a3c7fb25b3ed8c5dc831e035385b56b1b328d56920207c0e",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
     {
       "id": 426053675,
       "tag": "Trials/2.0.0-alpha.1",
