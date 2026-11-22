@@ -1,8 +1,55 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T11:45:20.800Z",
+  "generatedAt": "2026-11-22T22:06:43.164Z",
   "repo": "CraftAmethyst/Luminara",
   "releases": [
+    {
+      "id": 454757115,
+      "tag": "Trials/2.0.0-alpha.3",
+      "tagPrefix": "Trials",
+      "branch": "trials",
+      "version": "2.0.0-alpha.3",
+      "name": "Trials/2.0.0-alpha.3",
+      "htmlUrl": "https://github.com/CraftAmethyst/Luminara/releases/tag/Trials/2.0.0-alpha.3",
+      "publishedAt": "2026-11-22T21:18:22Z",
+      "prerelease": true,
+      "legacy": false,
+      "assets": [
+        {
+          "id": 780489701,
+          "name": "luminara-forge-1.20.1-2.0.0-alpha.3.jar",
+          "size": 25526550,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/2.0.0-alpha.3/luminara-forge-1.20.1-2.0.0-alpha.3.jar",
+          "loader": "forge",
+          "loaderSource": "filename",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "42df2347476c7d0dd10c11fff00e08a62cd588b14cdbb5b59bc6e8e880a62074",
+            "source": "github-digest",
+            "file": null
+          }
+        },
+        {
+          "id": 780490862,
+          "name": "luminara-fabric-1.20.1-2.0.0-alpha.3.jar",
+          "size": 26241540,
+          "downloadUrl": "https://github.com/CraftAmethyst/Luminara/releases/download/Trials/2.0.0-alpha.3/luminara-fabric-1.20.1-2.0.0-alpha.3.jar",
+          "loader": "fabric",
+          "loaderSource": "filename",
+          "minecraft": "1.20.1",
+          "minecraftSource": "filename",
+          "compatibility": "supported",
+          "checksum": {
+            "sha256": "7f5d60e4f67cae0ab555637b6b3741050fbedf5ed51b2a11dda420716fe623ee",
+            "source": "github-digest",
+            "file": null
+          }
+        }
+      ],
+      "otherAssets": []
+    },
     {
       "id": 427794121,
       "tag": "Trials/2.0.0-alpha.2",
