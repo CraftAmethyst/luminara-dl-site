@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import releasesData from '@/data/releases.json'
 import type { BranchId, ReleasesFile } from '@/types/releases'
 import { provideI18n } from '@/i18n'
 import { BRANCH_ORDER } from '@/content/branches'
+import { latestStable } from '@/lib/release-select'
 import SiteHeader from './components/SiteHeader.vue'
+import LatestStableRelease from './components/LatestStableRelease.vue'
 import VersionHistory from './components/VersionHistory.vue'
 import BranchTabs from './components/BranchTabs.vue'
 import SiteFooter from './components/SiteFooter.vue'
@@ -22,6 +24,7 @@ function initialBranch(): BranchId {
 }
 
 const branch = ref<BranchId>(initialBranch())
+const stable = computed(() => latestStable(data.releases, branch.value))
 
 function selectBranch(value: BranchId) {
   branch.value = value
@@ -64,6 +67,8 @@ function selectBranch(value: BranchId) {
             />
           </div>
         </div>
+
+        <LatestStableRelease v-if="stable" class="mt-8" :release="stable" />
 
         <VersionHistory
           class="mt-8"

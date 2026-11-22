@@ -13,6 +13,7 @@ export const en: Messages = {
   experimental: 'Experimental',
   prerelease: 'Prerelease',
   latest: 'Latest',
+  latestStable: 'Latest stable release',
   branchGroup: 'Choose a release branch',
   branchTrials: 'Trials · 1.20.1',
   branchFeudalKings: 'FeudalKings · 1.21.1',

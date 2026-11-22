@@ -11,6 +11,7 @@ export const zh = {
   experimental: '实验性',
   prerelease: '预发布',
   latest: '最新',
+  latestStable: '最新稳定版',
   branchGroup: '选择发布分支',
   branchTrials: 'Trials · 1.20.1',
   branchFeudalKings: 'FeudalKings · 1.21.1',

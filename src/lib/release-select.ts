@@ -4,6 +4,7 @@ import type {
   Release,
   ReleaseAsset,
 } from '@/types/releases'
+import { releaseStatus } from './release-status'
 
 export function supportedAssets(release: Release): ReleaseAsset[] {
   return release.assets.filter(
@@ -19,8 +20,8 @@ export function latestStable(
     releases.find(
       (release) =>
         release.branch === branch &&
-        !release.prerelease &&
         !release.legacy &&
+        releaseStatus(release) === 'stable' &&
         supportedAssets(release).length > 0,
     ) ?? null
   )

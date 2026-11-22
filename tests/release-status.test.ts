@@ -1,6 +1,7 @@
 import fs from 'node:fs'
 import { fileURLToPath, URL } from 'node:url'
 import { describe, expect, it } from 'vitest'
+import { latestStable } from '@/lib/release-select'
 import {
   isExperimentalRelease,
   releaseStatus,
@@ -46,6 +47,13 @@ describe('release status labels', () => {
   it('keeps alpha purple even if the API marks it stable', () => {
     const alpha = { ...byTag('Trials/1.0.15-alpha.1'), prerelease: false }
     expect(releaseStatus(alpha)).toBe('experimental')
+  })
+
+  it('skips alpha builds when selecting the latest stable release', () => {
+    const alpha = { ...byTag('Trials/2.0.0-alpha.2'), prerelease: false }
+    const stable = byTag('Trials/1.0.16')
+
+    expect(latestStable([alpha, stable], 'trials')).toBe(stable)
   })
 
   it('maps statuses to the expected badge classes', () => {
