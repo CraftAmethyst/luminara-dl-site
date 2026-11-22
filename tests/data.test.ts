@@ -73,15 +73,14 @@ describe('committed release snapshot', () => {
     expect(release?.tagPrefix).toBeNull()
   })
 
-  it('marks the Fabric JAR on Trials as unsupported', () => {
+  it('marks the Fabric JAR on Trials as supported', () => {
     const release = data.releases.find(
       (entry) => entry.tag === 'Trials/1.0.15-alpha.1',
     )
     expect(release).toBeDefined()
     expect(release?.assets).toHaveLength(1)
     expect(release?.assets[0].loader).toBe('fabric')
-    expect(release?.assets[0].compatibility).toBe('unsupported')
-    expect(supportedAssets(release!)).toHaveLength(0)
+    expect(supportedAssets(release!)).toEqual(release?.assets)
   })
 
   it('exposes both loaders on the FeudalKings beta', () => {

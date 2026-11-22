@@ -5,7 +5,7 @@ export const REPO_URL = `https://github.com/${REPO}`
 export const RELEASES_URL = `${REPO_URL}/releases`
 
 export const BRANCH_LOADERS = {
-  trials: ['forge'],
+  trials: ['forge', 'fabric'],
   feudalkings: ['neoforge', 'fabric'],
 }
 

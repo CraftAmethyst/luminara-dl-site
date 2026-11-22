@@ -40,7 +40,7 @@
           "loaderSource": "filename",
           "minecraft": "1.20.1",
           "minecraftSource": "filename",
-          "compatibility": "unsupported",
+          "compatibility": "supported",
           "checksum": {
             "sha256": "f0a7133ce8fe5a19a3c7fb25b3ed8c5dc831e035385b56b1b328d56920207c0e",
             "source": "github-digest",
@@ -87,7 +87,7 @@
           "loaderSource": "filename",
           "minecraft": "1.20.1",
           "minecraftSource": "filename",
-          "compatibility": "unsupported",
+          "compatibility": "supported",
           "checksum": {
             "sha256": "ed578d6f992ffc763e37c98900850f642aefe8ed2119bb9c3c91867ba450e54a",
             "source": "github-digest",
@@ -430,7 +430,7 @@
           "loaderSource": "filename",
           "minecraft": "1.20.1",
           "minecraftSource": "filename",
-          "compatibility": "unsupported",
+          "compatibility": "supported",
           "checksum": {
             "sha256": "d6810022c1704feeca488dbe86bb738c199651119e96e1668e212c75370ee742",
             "source": "github-digest",

@@ -199,13 +199,13 @@ describe('asset parsing', () => {
     expect(asset.compatibility).toBe('supported')
   })
 
-  it('marks the Fabric JAR on Trials as unsupported', () => {
+  it('marks the Fabric JAR on Trials as supported', () => {
     const asset = normalizeAsset(
       apiAsset('luminara-fabric-1.20.1-1.0.15-alpha.1.jar'),
       'trials',
     )
     expect(asset.loader).toBe('fabric')
-    expect(asset.compatibility).toBe('unsupported')
+    expect(asset.compatibility).toBe('supported')
   })
 
   it('reads the API digest and ignores checksum assets as downloads', () => {
